@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router';
+import { asset } from '../lib/path';
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -11,9 +12,9 @@ export default function LandingPage() {
         loop
         muted
         playsInline
-        poster="./page-bg.png"
+        poster={asset('page-bg.png')}
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="./background-video.mp4"
+        src={asset('background-video.mp4')}
       />
 
       {/* Dark overlay for text readability */}
@@ -22,7 +23,7 @@ export default function LandingPage() {
       {/* Navigation */}
       <nav className="relative z-10 flex flex-row justify-between items-center px-8 py-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-3">
-          <img src="./logo.png" alt="DreamShot" className="w-10 h-10 object-contain" />
+          <img src={asset('logo.png')} alt="DreamShot" className="w-10 h-10 object-contain" />
           <div
             className="text-3xl tracking-tight text-foreground"
             style={{ fontFamily: "'Instrument Serif', serif" }}

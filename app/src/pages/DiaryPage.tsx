@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router';
 import { ChevronLeft, BookOpen, Heart, Calendar, Camera, Sparkles } from 'lucide-react';
 import { useApp } from '../context/AppContext';
+import { asset } from '../lib/path';
 
 export default function DiaryPage() {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export default function DiaryPage() {
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <img src="./logo.png" alt="DreamShot" className="w-9 h-9 object-contain hidden sm:block" />
+          <img src={asset('logo.png')} alt="DreamShot" className="w-9 h-9 object-contain hidden sm:block" />
           <div>
             <div
               className="text-xl tracking-tight"
