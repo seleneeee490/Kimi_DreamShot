@@ -17,7 +17,7 @@ export default function DiaryPage() {
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <img src="/logo.png" alt="DreamShot" className="w-9 h-9 object-contain hidden sm:block" />
+          <img src="./logo.png" alt="DreamShot" className="w-9 h-9 object-contain hidden sm:block" />
           <div>
             <div
               className="text-xl tracking-tight"

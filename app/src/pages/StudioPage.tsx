@@ -488,7 +488,7 @@ export default function StudioPage() {
       {/* Full-screen background image */}
       <div
         className="fixed inset-0 bg-cover bg-center bg-no-repeat z-0"
-        style={{ backgroundImage: 'url(/daisy-wallpaper.png)' }}
+        style={{ backgroundImage: 'url(./daisy-wallpaper.png)' }}
       />
 
       {/* Subtle dark overlay for readability */}
@@ -512,7 +512,7 @@ export default function StudioPage() {
           <button onClick={() => navigate('/')} className="p-2 rounded-full hover:bg-white/5 transition-colors">
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <img src="/logo.png" alt="DreamShot" className="w-9 h-9 object-contain hidden sm:block" />
+          <img src="./logo.png" alt="DreamShot" className="w-9 h-9 object-contain hidden sm:block" />
           <div>
             <div className="text-xl tracking-tight" style={{ fontFamily: "'Instrument Serif', serif" }}>DreamShot</div>
             <div className="text-[10px] text-muted-foreground tracking-widest uppercase">PEACEMINUSONE · A LOVE DIARY</div>
