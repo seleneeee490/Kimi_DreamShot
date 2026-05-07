@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { X, Send } from 'lucide-react';
 import { useApp } from '../context/AppContext';
+import { asset } from '../lib/path';
 
 const quickReplies = [
   '今天干嘛了',
@@ -208,7 +209,7 @@ export default function ChatPanel() {
       <div className="flex items-center gap-3 p-4 border-b border-white/10 shrink-0">
         <div className="relative">
           <img
-            src="/gd-avatar.jpg"
+            src={asset('gd-avatar.jpg')}
             alt="GD"
             className="w-9 h-9 rounded-full object-cover ring-1 ring-white/20"
           />
