@@ -35,7 +35,7 @@ export default function DiaryPage() {
         <div className="flex items-center gap-2">
           <div className="liquid-glass rounded-full px-4 py-1.5 text-xs flex items-center gap-2">
             <Heart className="w-3 h-3 text-purple-400" />
-            今天和 GD 哥哥在一起 💕
+            우리의 추억
           </div>
         </div>
       </header>
